@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+{% block title %}Acerca de{% endblock%}
+{% load static %}
+{% block background %}{% static 'core/img/about-bg.jpg'%}{% endblock %}
+{% block headers %} 
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">  
+
+<div class="col-lg-3 col-md-4 offset-lg-1">
+    <img class="img-fluid avatar" src="{% static 'core/img/avatar.png' %}" alt="avatar">
+  </div>
+  <div class="col-lg-7 col-md-8">
+    <h2 class="section-heading">Tomás Palmeyro</h2>   
+    <p>Nacido en... Buenos aires, Argentina. Técnico superior en química y biotecnología y programador</p>
+    <p>Curse programacion Fundamentos y Java en UTN, Java fullsack en Codo a Codo</p>
+  </div>
+</div>  
+{% endblock%}
+    
+
+
+
+
+
